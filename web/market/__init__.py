@@ -5,6 +5,7 @@ from flask_login import LoginManager
 from market.config import DEV_DB, PROD_DB
 import os
 
+
 app = Flask(__name__)
 if os.environ.get('DEBUG') == '1':
     app.config['SQLALCHEMY_DATABASE_URI'] = DEV_DB
